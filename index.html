@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="lib/aframe-v1.3.0.js"></script>
+
+  <script src="lib/RGBELoader.js"></script>
+
+  <script src="components/aframe-orbit-controls.js"></script>
+  <script src="components/aframe-env-map-component.js"></script>
+  <script src="components/aframe-hdr-environment.js"></script>
+
+  <title>A-Frame HDR Environment Map Example</title>
+
+</head>
+<body>
+
+  <a-scene light="defaultLightsEnabled: false" hdr-environment="url: images/venice_sunset_1k.hdr; showBackground: true; showGround: true; groundSize: 15">
+
+    <a-assets>
+      <img id="environment" src="images/environment.jpg">
+      <a-asset-item id="model" src="/glb/bmw.glb"></a-asset-item>
+    </a-assets>
+
+    <a-entity camera="fov: 50" look-controls="enabled: false" orbit-controls="target: 0.0 0.5 0.0; minDistance: 3; maxDistance: 8; initialPosition: -4 2 4; zoomSpeed: 1"></a-entity>
+
+    <a-entity gltf-model="#model"></a-entity>
+
+  </a-scene>
+
+</body>
+</html>
