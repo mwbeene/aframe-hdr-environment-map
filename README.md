@@ -1,6 +1,8 @@
 # aframe-hdr-environment-map
 An example demonstrating the use of equirectangular hdr maps in A-Frame
 
+![Screenshot](https://github.com/mwbeene/aframe-hdr-environment-map/raw/master/screenshot.jpg)
+
 [Live Demo](https://mwbeene.github.io/aframe-hdr-environment-map/)
 
 ## Parameters
